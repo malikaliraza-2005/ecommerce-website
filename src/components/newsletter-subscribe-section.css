@@ -1,0 +1,24 @@
+.news-letter-subscribe-section {
+    background: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (min-width: 1200px) {
+    .news-letter-subscribe-section {
+        padding: 60px 120px;
+        height: 24rem;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .news-letter-subscribe-section {
+        padding: 50px 60px;
+        height: 22rem;
+    }
+}

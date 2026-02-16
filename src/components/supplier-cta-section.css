@@ -1,0 +1,17 @@
+.supplier-cta-section{
+    height: 20rem;
+    background-color: pink;
+}
+
+@media (min-width: 1200px) {
+    .supplier-cta-section {
+        height: 24rem;
+        padding: 0 8rem;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .supplier-cta-section {
+        height: 22rem;
+        padding: 0 4rem;
+    }
+}

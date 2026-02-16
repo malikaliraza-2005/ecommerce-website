@@ -1,0 +1,105 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+      padding: 12px 20px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  height: 70px;
+  justify-content: space-around;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 20%;
+  justify-content: space-around;
+}
+
+.brand-logo {
+  width: 40%;
+  height: 40px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.brand-text {
+  color: #4a90e2;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: 50%;
+  justify-content: center;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid #2b7be9;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 1rem;
+  background: white;
+}
+
+.search-select {
+  padding: 10px 12px;
+  border: 2px solid #2b7be9;
+  border-left: 2px solid #2b7be9;
+  border-left: none;
+  border-right: none;
+  background-color: white;
+  color: #333;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  background-color: #1e6fe8;
+  color: white;
+  border: 2px solid #1e6fe8;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.search-btn:hover {
+  background-color: #1a5fb8;
+}
+
+.nav-right {
+  display: flex;
+  gap: 30px;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.nav-item img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.nav-item span {
+  font-size: 0.75rem;
+  color: #666;
+  white-space: nowrap;
+}

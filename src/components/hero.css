@@ -1,0 +1,181 @@
+.hero{
+    height: 30em;
+    display: flex;
+    margin-top: 3rem;
+        margin-bottom: 3rem;
+
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+    gap: 2rem;
+    border: 0.5px solid rgb(224, 222, 222);
+}
+
+@media (min-width: 1200px) {
+    .hero {
+        margin-left: 12rem;
+        margin-right: 12rem;
+        height: 35em;
+        gap: 3rem;
+    }
+    .hero-left,
+    .hero-right {
+        width: 35%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hero {
+        margin-left: 8rem;
+        margin-right: 8rem;
+        height: 32em;
+        gap: 2.5rem;
+    }
+    .hero-left,
+    .hero-right {
+        width: 32%;
+    }
+}
+.hero-left{
+    width: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.hero-left button{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    color: #333;
+    text-align: center;
+    padding: 0.5rem 0;
+    height: 7rem;
+
+
+}
+.hero-left button:hover{
+    background: #E5F1FF;
+}
+.hero-right{
+    width: 30%;
+    background-color: lightblue;
+}
+.hero-right .one {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5rem;
+    justify-content: center;
+    background: #E3F0FF;
+}
+.hero-right .one .text{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    text-align: center;
+
+
+}
+.hero-right .one img{
+    width: 20%;
+    height: 45%;
+    object-fit: cover;
+    margin: 1.2rem;
+    
+}
+.btn{
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    color: #333;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    background-color: #E5F1FF;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.btn #join-btn{
+    width: 100%;
+    background: blue;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+   
+}
+.btn #login-btn{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #333;
+    color: blue;
+    border-radius: 0.5rem;
+    border: none;
+}
+.hero-right .two {
+    width: 100%;
+    height: 25%;
+    object-fit: cover;
+    background: #F38332;
+}
+.hero-right .two .two-content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: white;
+    padding: 1rem;
+    padding-left: 2rem;
+}
+.hero-right .three {
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+    box-flex-group: #55BDC3;
+}
+.hero-right .three .three-content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: white;
+    padding: 1rem;
+    padding-left: 2rem;
+}
+.hero-mid{
+    width: 70%;
+    padding: 3rem;
+    background-image: url("../assets/assets2/Image/backgrounds/banner.png");
+    background-position: center;
+    background-size: cover;
+}
+.hero-mid p{
+    font-size: 2rem;
+
+}
+.hero-mid button{
+    margin-top: 1rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #333;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    background-color: #E5F1FF;
+}
+.hero-mid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

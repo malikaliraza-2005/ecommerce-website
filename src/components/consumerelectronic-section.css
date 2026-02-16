@@ -1,0 +1,17 @@
+.consumerelectronic-section{
+    height: 20rem;
+    background-color: purple;
+}
+
+@media (min-width: 1200px) {
+    .consumerelectronic-section {
+        height: 24rem;
+        padding: 0 8rem;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .consumerelectronic-section {
+        height: 22rem;
+        padding: 0 4rem;
+    }
+}

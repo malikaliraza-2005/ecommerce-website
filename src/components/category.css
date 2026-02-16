@@ -1,0 +1,83 @@
+.category {
+  height: 4rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  box-sizing: border-box;
+}
+
+.category-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.category-left img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.category-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.category-left button {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  color: #333;
+}
+
+.category-right button {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Responsive layout for PC screens */
+@media (min-width: 1200px) {
+  .category {
+    padding-left: 12rem;
+    padding-right: 12rem;
+    height: 4.5rem;
+    font-size: 1.1em;
+  }
+  .category-left button,
+  .category-right button {
+    font-size: 1.1em;
+    padding: 0.5em 1.2em;
+  }
+  .category-row {
+    gap: 1.5em;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .category {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    height: 4rem;
+    font-size: 1em;
+  }
+  .category-left button,
+  .category-right button {
+    font-size: 1em;
+    padding: 0.4em 1em;
+  }
+  .category-row {
+    gap: 1em;
+  }
+}
