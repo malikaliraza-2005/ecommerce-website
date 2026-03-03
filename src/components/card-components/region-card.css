@@ -1,0 +1,12 @@
+.region-card {
+    background-color: #F7FAFC;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    width: 15%;
+    
+}
+.region-card img {
+    width: 20%;
+    height: 20%;
+}

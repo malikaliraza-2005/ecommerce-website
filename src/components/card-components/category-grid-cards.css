@@ -7,12 +7,12 @@
   flex-direction: row;
   align-items: center;
   gap: 10px;
-  width: 90%;
-  max-width: 320px;
-  min-width: 220px;
-  height: 100%;
+  width: 100%;
+  
+  height: auto;
   border: 1px solid #eee;
   margin: 0 auto;
+  border: 2px solid #E0E0E0;
 }
 
 .category-card-content {
@@ -23,10 +23,11 @@
 }
 
 .category-card-title {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 500;
   color: #333;
   margin-bottom: 0.5em;
+  width: 100%;
 }
 
 .category-card-desc {
@@ -35,8 +36,23 @@
 }
 
 .category-card img {
-  width: 100px;
+  width: 80px;
   height: auto;
   object-fit: contain;
   margin-left: 1em;
+  position: static;
+  top: auto;
+  align-self: center;
+}
+@media (max-width: 1024px) {
+  .category-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .category-card img {
+    margin-left: 0;
+    margin-top: 1em;
+    top: 0;
+  }
 }

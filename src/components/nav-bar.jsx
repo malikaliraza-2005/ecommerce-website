@@ -14,8 +14,8 @@ const NavBar = () => {
       </div>
 
       <div className="nav-center">
-        <input type="search" placeholder="Search" className="search-input" />
-        <select className="search-select"><option>All category</option></select>
+        <input type="search" id="search-input" name="search" placeholder="Search" className="search-input" />
+        <select id="search-category" name="category" className="search-select" defaultValue="all-category"><option value="all-category">All category</option></select>
         <button className="search-btn">Search</button>
       </div>
 

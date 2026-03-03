@@ -1,9 +1,12 @@
 .deals-section{
-    height: 20rem;
+    height: 30rem;
     width: 100%;
     background-color: white;
     display: flex;
     flex-direction: row;
+    margin: 0 auto;
+    position: relative;
+    
 
 }
 .deal-section-left {
@@ -13,6 +16,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+
 
 }
 .deal-section-left .date-time-cards{
@@ -29,10 +33,6 @@ justify-content: center;
     justify-content: flex-start;
 }
 .deal-section-right .card{
-    border-color: black;
-    border-width: 1px;
-    border-radius: 0.5rem;
-    border-style: solid;
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -42,4 +42,35 @@ justify-content: center;
 }
 .deal-section-right img{
     height: 10rem;
+}
+/* Tablet + Mobile */
+@media (max-width: 1024px) {
+.deals-section{
+    flex-direction: column;
+    height: auto;
+    margin: 0 auto;
+    
+  }
+  .deal-section-left{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+
+  }
+  .text{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .deal-section-right{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  
 }

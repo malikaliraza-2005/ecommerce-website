@@ -1,39 +1,19 @@
-import { useState } from 'react'
-
-import './App.css'
-import NavBar from './components/nav-bar'
-import Category from './components/category'
-import Hero from './components/hero'
-import DealsSection from './components/deals-section'
-import HomeOutdoorSection from './components/homeoutdoor-section' 
-import ConsumerelectronicSection from './components/consumerelectronic-section'
-import SupplierCtaSection from './components/supplier-cta-section'
-import RecommendedItemSection from './components/recommended-item-section'
-import SuppliersByRegionSection from './components/suppliers-by-region-section'
-import ExtraServicesSection from './components/extra-services-section'
-import NewsletterSubscribeSection from './components/newsletter-subscribe-section'
-import Footer from './components/footer'
-import FooterBottom from './components/footer-bottom'
-
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+import ProductListing from "./pages/product-listing";
+import ProductGridView from "./pages/product-gridview";
+import ProductDetail from "./pages/product-detail";
+import Cart from "./pages/cart";
 function App() {
-
   return (
-    <div className="App">
-      <NavBar />
-      <Category />
-      <Hero />
-      <DealsSection />
-      <HomeOutdoorSection />
-      <ConsumerelectronicSection />
-       <SupplierCtaSection />
-       <RecommendedItemSection />
-        <ExtraServicesSection />
-       <SuppliersByRegionSection />
-       <NewsletterSubscribeSection />
-        <Footer />
-        <FooterBottom />
-    </div>      
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/product-listing" element={<ProductListing />} />
+      <Route path="/product-gridview" element={<ProductGridView />} />
+      <Route path="/product-detail" element={<ProductDetail />} />
+      <Route path="/cart" element={<Cart />} />
+    </Routes>
   );
 }
 
-export default App
+export default App;

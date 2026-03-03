@@ -5,9 +5,12 @@ const NewsletterSubscribeSection = () => {
   return (
     <div className="newsletter-subscribe-section">
       <h1>Subscribe to our Newsletter</h1>
-      <p>Get the latest updates and offers.</p>
-      <input type="email" placeholder="Enter your email" />
+      <p>Get daily new for upcoming offers from many suppliers all over the world.</p>
+      <div className="email-button">
+
+      <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" />
       <button>Subscribe</button>
+      </div>  
     </div>
   );
 }

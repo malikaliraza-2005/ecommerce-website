@@ -13,8 +13,11 @@ const DealsSection = () => {
   return (
     <div className="deals-section">
       <div className="deal-section-left">
+        <div className="text">
   <h2>Deals and Offers</h2>
   <p>Hygiene Equipments</p>
+        </div>
+
           <div className="date-time-cards">
 
   <DateTimeCard number="04" text="Days" />
