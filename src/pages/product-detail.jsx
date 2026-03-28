@@ -13,7 +13,6 @@ import "./product-detail.css";
 
 function ProductDetail() {
   const [activeTab, setActiveTab] = useState("Description");
-  const [isFav, setIsFav] = useState(false);
 
   const thumbnails = [
     iphoneImage,

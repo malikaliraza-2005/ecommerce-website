@@ -7,6 +7,7 @@ import Footer from "../components/footer";
 import FooterBottom from "../components/footer-bottom";
 import "./product-listing.css"; 
 const ProductListing = () => {
+  console.log("ProductListing component rendered");
   return (
     <div className="product-listing-page">
       <NavBar />

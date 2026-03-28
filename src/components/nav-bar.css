@@ -17,11 +17,24 @@
 }
 
 .brand-logo {
-  width: 40%;
-  height: 40px;
+  width: auto;
+  max-width: 150px;
+  max-height: 48px;
+  height: auto;
   border-radius: 5px;
-  object-fit: cover;
+  object-fit: contain;
 }
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 20%;
+  min-width: 180px;
+  justify-content: center;
+  padding-left: 20px;
+}
+
 
 .brand-text {
   color: #4a90e2;

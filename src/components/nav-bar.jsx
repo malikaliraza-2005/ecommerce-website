@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./nav-bar.css";
 import BrandLogo from "../assets/logo-colored.png";
 import userIcon from "../assets/user.png";
@@ -10,7 +11,9 @@ const NavBar = () => {
   return (
     <nav className="nav-bar">
       <div className="nav-left">
-        <img src={BrandLogo} alt="Brand" className="brand-logo" />
+        <Link to="/">
+          <img src={BrandLogo} alt="Brand" className="brand-logo" />
+        </Link>
       </div>
 
       <div className="nav-center">
@@ -34,7 +37,7 @@ const NavBar = () => {
         </div>
         <div className="nav-item">
           <img src={cartIcon} alt="My cart" />
-          <span>My cart</span>
+          <Link to="/cart"><span>My cart</span></Link>
         </div>
       </div>
     </nav>

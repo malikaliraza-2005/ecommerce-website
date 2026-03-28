@@ -8,6 +8,7 @@ import watchImage from '../../assets/assets2/Image/tech/watch.png';
 import headphoneImage from '../../assets/assets2/Image/tech/headphone2.png';
 
 const ProductListingCardsList = () => {
+  console.log("ProductListingCardsList component rendered");
   const products = [
     {
       image: iphoneImage,

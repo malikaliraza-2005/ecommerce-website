@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './product-listing-cards.css';
 import iphoneImage from '../../assets/assets2/Image/tech/iphone.png';
 import mobileImage from '../../assets/assets2/Image/tech/mobile.png';
@@ -106,7 +107,7 @@ const ProductListingCards = () => {
   const [viewMode, setViewMode] = React.useState('grid');
   const [verifiedOnly, setVerifiedOnly] = React.useState(false);
 
-  function ProductCard({ product, index }) {
+  function ProductCard({ product }) {
     const [isFav, setIsFav] = React.useState(false);
 
     return (
@@ -134,7 +135,7 @@ const ProductListingCards = () => {
             <div className="shipping-badge">{product.shipping}</div>
           </div>
           <p className="description">{product.description}</p>
-          <a href="#" className="view-details">View details</a>
+          <Link to="/product-detail" className="view-details">View details</Link>
         </div>
       </div>
     );

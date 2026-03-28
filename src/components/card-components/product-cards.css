@@ -5,6 +5,9 @@
     padding: 1rem;
     text-align: center;
     transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }.product-card:hover {
     transform: translateY(-5px);
 }
